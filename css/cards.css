@@ -1,0 +1,60 @@
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  font-family: "Ubuntu", sans-serif;
+  max-width: 90vw;
+  margin: 50px auto;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  /* border-color: white; */
+}
+
+.card-item {
+  padding: 10px 10px 10px 10px;
+  border: 5px solid #42a5f5;
+  border-radius: 8px;
+  /* border-color: #e6e3ea; */
+  padding: 0px 10px;
+  background-color: #030202;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 30vw;
+  flex-direction: column;
+}
+
+.card-item:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.card-container {
+  display: flex;
+}
+
+.my-1 {
+  margin: 10px 10px 10px 10px;
+  padding: 0 10px 0 10px;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+.my-2 {
+  margin: 0px 10px 10px 10px;
+  padding: 0 10px 0 10px;
+  margin: 23px 0;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 800;
+}
+
+.text-center {
+  text-align: center;
+}
