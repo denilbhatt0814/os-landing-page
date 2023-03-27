@@ -13,7 +13,7 @@ body {
 
 nav {
   width: 100%;
-  background-color: blueviolet;
+  background-color: rgb(138, 43, 226);
   display: flex;
   align-items: center;
   padding: 0 auto;
@@ -41,7 +41,7 @@ nav ul li {
 
 nav ul li a {
   list-style: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-family: "Quicksand", sans-serif;
   font-weight: 900;
@@ -49,9 +49,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-weight: bolder;
-  transition: 0.3s linear;
+  transition: 0.2s linear;
 }
 
 .heading {
@@ -60,10 +60,11 @@ nav ul li a:hover {
   font-family: "Quicksand";
   font-weight: 900;
   font-size: 30px;
+  color: white;
 }
 
 .heading:hover {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   transition: 0.4s linear;
   font-weight: bolder;
 }
@@ -75,6 +76,8 @@ nav ul li a:hover {
   flex-direction: row;
   margin: 0;
 }
+
+
 
 img {
   vertical-align: middle;
@@ -97,7 +100,7 @@ img {
 }
 
 .box {
-  background-color: blueviolet;
+  background-color: rgb(138, 43, 226);
   display: flex;
   font-family: "Ubuntu", sans-serif;
   justify-content: center;
@@ -112,7 +115,8 @@ p {
 
 footer {
   height: 10vh;
-  background-color: blueviolet;
-  color: white;
-  font-family: "Quicksand", sans-serif;
+  background-color: rgb(138, 43, 226);
+  color: rgb(0, 0, 0);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
 }

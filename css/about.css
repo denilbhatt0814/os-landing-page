@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: #000000;
+}
+
+nav ul {
+  text-align: right;
+  font-size: large;
+  padding: 0.6em;
+  margin-bottom: 0.5em;
+}
+
+li {
+  display: inline;
+}
+
+.Container {
+  text-align: center;
+  display: inline-block;
+  justify-content: center;
+  margin-top: 2bem;
+  margin-left: 38.5%;
+}
+
+.Ctext {
+  font-size: 2em;
+  letter-spacing: 0.8px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 15px 0 0 0;
+  animation: typing 1.4s, cursor 0.1s step-end infinite alternate;
+  z-index: 1;
+}
+
+@keyframes cursor {
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+span {
+  color: #03ffea;
+  text-transform: uppercase;
+}
+
+p {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Sofia", sans-serif;
+  font-size: 40px;
+  margin-top: 20px;
+  color: #07dbf3;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.card {
+  height: 330px;
+  width: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #222;
+  border: double 4px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#222, #222),
+    radial-gradient(circle at top left, #f0f2f3, #08cbf1);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.card .bg-image img {
+  width: 80%;
+  height: 100px;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0%, 100% 70%, 45% 100%, 0 70%);
+}
+
+.card .pic img {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 10px solid #222;
+  margin-top: -110px;
+  position: relative;
+}
+
+.card .info h3 {
+  color: #07e2f1;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.card .info span {
+  font-size: 15px;
+  font-weight: 800;
+  color: #2b07f9;
+}
+
+.card .info p {
+  font-size: 13px;
+  padding: 10px 20px;
+  color: #999;
+}
+
+.card .info .icons a,
+.card .info .icons i {
+  font-size: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+
+.card .info .icons a:hover,
+.card .info .icons i:hover {
+  color: #15fa09;
+}
+
+.flex-all-center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}

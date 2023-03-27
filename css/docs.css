@@ -1,0 +1,35 @@
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.bigbox {
+  background-color: rgb(138, 43, 226);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  height: 80vh;
+  width: 90vw;
+  margin-bottom: 5rem;
+}
+
+.home {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  color: #000;
+  font-weight: 800;
+  text-decoration: none;
+  margin-left: 69rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.body {
+  color: #fff;
+  font-size: 20px;
+}
