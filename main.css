@@ -13,7 +13,7 @@
 /* Navbar Styles */
 .navbar {
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(20px);
   position: fixed;
   top: 0;
   left: 0;
@@ -62,9 +62,8 @@
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
-  font-size: 55px;
   text-align: center;
-  
+  font-size: 55px;
 }
 
 h3 {
@@ -78,6 +77,11 @@ p {
   margin: 0;
   font-family: "Roboto", sans-serif;
   text-align: center;
+}
+
+.logo {
+  height: 35px;
+  width: 35px;
 }
 
 /* Main Content Styles */
@@ -148,7 +152,7 @@ p {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 20px;
-  padding: 20px 60px 30px 60px;
+  padding: 60px 60px 60px 60px;
   border: 3px solid white;
 }
 
@@ -197,7 +201,7 @@ p {
 
 .card-description {
   font-size: 15px;
-  color: #09dff3;
+  color: #ffffff;
   margin-bottom: 20px;
   text-align: left;
 }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="public/logo.png">
+    <link rel="stylesheet" href="common.css">
+    <title>Dining Philosopher</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="background-video">
+            <video id="myVideo" src="Shortened_Galaxy.mp4" autoplay loop muted preload="auto">
+            </video>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="main.html" class="navbar-brand">OS Virtual Lab</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="main.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-container">
+        <div class="dummy-text">
+
+            <div class="heading">
+                DINING PHILOSOPHER PROBLEM
+            </div>
+
+            <p>The Dining Philosophers problem is a classic synchronization problem in computer science, originally
+                formulated by Edsger Dijkstra in 1965. The problem involves five philosophers who are sitting at a
+                circular table and alternately thinking and eating. There are five chopsticks, one placed between each
+                pair of adjacent philosophers.</p>
+
+            <p>The challenge is to design a solution that ensures that each philosopher can pick up the two chopsticks
+                adjacent to them and start eating, without causing a deadlock or a starvation situation. A deadlock
+                occurs when all the philosophers are waiting for a chopstick that they cannot obtain, and a starvation
+                situation occurs when one or more philosophers are always waiting for a chopstick while others eat.</p>
+
+            <p>One solution to the Dining Philosophers problem involves assigning a unique identifier to each chopstick
+                and having each philosopher acquire the chopstick with the lower identifier first, then the higher
+                identifier. Another solution involves using a monitor or semaphore to enforce mutual exclusion and
+                ensure that only one philosopher can pick up a chopstick at a time.</p>
+
+            <p>The Dining Philosophers problem has become a classic example of the challenges of concurrent programming
+                and has been used to illustrate a variety of synchronization and deadlock avoidance techniques. It has
+                also been applied in other areas, such as resource allocation in distributed systems and scheduling in
+                real-time systems.</p>
+
+            <p>In conclusion, the Dining Philosophers problem is an important synchronization problem in computer
+                science that illustrates the challenges of concurrent programming. It highlights the need for careful
+                design and implementation of synchronization mechanisms to ensure that multiple processes can access
+                shared resources without causing deadlocks or starvation</p>
+
+            <p class="bigtext">Advantages</p>
+
+            <p>The Dining Philosophers problem is a classic example that helps computer scientists to understand the
+                challenges of synchronization and concurrency in computer systems.
+                It provides a practical scenario that enables developers to learn how to apply synchronization
+                mechanisms such as semaphores, monitors, and mutexes in real-life situations.
+                The Dining Philosophers problem has helped to develop numerous algorithms and techniques to avoid
+                deadlocks, prevent race conditions and resolve synchronization problems.
+                The problem has applications in other areas, such as resource allocation in distributed systems,
+                scheduling in real-time systems, and synchronization in parallel computing.
+
+            <p class="bigtext">Disadvantages</p>
+
+            The Dining Philosophers problem is a contrived example that may not accurately reflect real-world scenarios.
+            Some solutions to the Dining Philosophers problem can be complex and difficult to implement.
+            The problem assumes a fixed number of resources, in this case, chopsticks, which may not reflect the
+            realities of real-world systems that may have variable resources.
+            There is no single solution that is universally applicable to the Dining Philosophers problem, and the most
+            effective solution may depend on the specific context in which it is applied.
+        </div>
+    </div>
+
+</body>
+
+</html>

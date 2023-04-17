@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="common.css">
+    <title>Shortest Job First</title>
 </head>
 
 <body>
@@ -15,15 +15,62 @@
             <video id="myVideo" src="Shortened_Galaxy.mp4" autoplay loop muted preload="auto">
             </video>
         </div>
+    </div>
 
-        <nav class="navbar">
-            <a href="main.html" class="navbar-brand">OS Virtual Lab</a>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="main.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
-            </ul>
-        </nav>
+    <nav class="navbar">
+        <a href="main.html" class="navbar-brand">OS Virtual Lab</a>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="main.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
+        </ul>
+    </nav>
+
+    <div class="text-container">
+        <div class="dummy-text">
+
+            <div class="heading">
+                SHORTEST JOB FIRST
+            </div>
+
+            <p>SJF, or Shortest Job First, is a CPU scheduling algorithm that aims to minimize the
+                average waiting time of processes in a system. It assigns the CPU to the process with the shortest
+                estimated processing time, based on the amount of CPU time a process has used in the past or an estimate
+                of the future processing time. This prioritization of shorter processes can lead to better system
+                performance and faster turnaround times for all processes. However, estimating processing times
+                accurately can be challenging, and SJF may not work well in systems with a mix of long and short
+                processes, as longer processes may experience starvation.</p>
+
+            <p>Non-preemptive SJF does not allow preemption of running processes, meaning that once a process is
+                assigned the CPU, it continues to run until it completes. This approach simplifies the scheduling
+                algorithm, as the scheduler only needs to consider the relative lengths of processes to determine which
+                process to run next. However, non-preemptive SJF can lead to longer average waiting times if a longer
+                process is scheduled early and must run to completion before any shorter processes can run.</p>
+
+            <p>Preemptive SJF allows preemption of a running process if a shorter process arrives, interrupting the
+                currently running process and scheduling the shorter process to run instead. This approach can lead to
+                shorter average waiting times, as shorter processes can run even if longer processes are running.
+                However, preemptive SJF can also lead to increased overhead due to the need to frequently switch between
+                processes.</p>
+
+            <p>Overall, SJF is a useful scheduling algorithm that prioritizes shorter processes to reduce average
+                waiting times. The choice between preemptive and non-preemptive SJF depends on the specific system
+                requirements and the mix of short and long processes in the system.</p>
+
+            <p class="bigtext">Advantages</p>
+
+            <p>Reduces the average waiting time of processes, leading to better system performance.
+                Prioritizes shorter processes, which can result in faster completion times and increased throughput.
+                Non-preemptive SJF can lead to better CPU utilization as there is less overhead switching between
+                processes.
+
+            <p class="bigtext">Disadvantages</p>
+
+            Difficult to accurately estimate processing times, which can lead to longer waiting times for longer
+            processes.
+            May result in starvation of longer processes, which can impact the overall system performance.
+            Preemptive SJF can lead to more overhead due to the frequent switching between processes.
+        </div>
     </div>
 
 </body>
