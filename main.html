@@ -5,102 +5,143 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="public/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="main.css">
     <title>OS Virtual Lab</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="background-video">
-            <video id="myVideo" src="Shortened_Galaxy.mp4" autoplay loop muted preload="auto">
-            </video>
-        </div>
-
         <nav class="navbar">
             <a href="main.html" class="navbar-brand">OS Virtual Lab</a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="main.html" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="aboutus.html" class="nav-link">About Us</a></li>
-                <li class="nav-item"><a href="explore.html" class="nav-link">Explore</a></li>
+                <li class="nav-item"><a onclick="scrollToSection('scroll')" class="nav-link">Explore</a></li>
             </ul>
         </nav>
 
-        <div class="main-content">
-            <div class="text-container">
-                <div class="dummy-text">
-                    <h1>SCHEDULING ALGORITHMS</h1>
+        <div id="particles-js">
+            <div class="main-content">
+                <div class="bgImage">
+                    <img src="public/bg.jpg" alt="Background"></img>
+                </div>
 
-                    <p>OS scheduling algorithms aim to achieve various objectives, such as maximizing CPU utilization,
-                        minimizing response time, improving throughput, and ensuring fairness among processes. Different
-                        scheduling algorithms use different strategies to allocate CPU time, such as Preemptive or
-                        Non-Preemptive Scheduling, Priority-based Scheduling, Round-Robin Scheduling, Shortest Job Next
-                        (SJN) and many more.
-                    </p>
-                    <br>
-                    <p>
-                        Each scheduling algorithm has its advantages and trade-offs, impacting the overall system
-                        performance, response time, and fairness. Choosing an appropriate scheduling algorithm is a
-                        critical decision in OS design, as it directly affects the user experience and system
-                        efficiency.
-                        Understanding OS scheduling algorithms is essential for system developers, administrators, and
-                        users to effectively manage system resources, optimize performance, and ensure smooth execution
-                        of processes in a multitasking environment.
-                    </p>
+                <div class="text-container">
+                    <div class="dummy-text">
+
+                        <h1>SCHEDULING ALGORITHMS</h1>
+                        <p>OS scheduling algorithms aim to achieve various objectives, such as maximizing CPU
+                            utilization,
+                            minimizing response time, improving throughput, and ensuring fairness among processes.
+                            Different
+                            scheduling algorithms use different strategies to allocate CPU time, such as Preemptive
+                            or
+                            Non-Preemptive Scheduling, Priority-based Scheduling, Round-Robin Scheduling, Shortest
+                            Job
+                            Next
+                            (SJN) and many more.
+                        </p>
+                        <p>
+                            Each scheduling algorithm has its advantages and trade-offs, impacting the overall
+                            system
+                            performance, response time, and fairness. Choosing an appropriate scheduling algorithm
+                            is a
+                            critical decision in OS design, as it directly affects the user experience and system
+                            efficiency.
+                            Understanding OS scheduling algorithms is essential for system developers,
+                            administrators,
+                            and
+                            users to effectively manage system resources, optimize performance, and ensure smooth
+                            execution
+                            of processes in a multitasking environment.
+                        </p>
+                        <p>
+                            Each scheduling algorithm has its own trade-offs, and the selection of an appropriate
+                            algorithm should be based on careful consideration of factors such as turnaround time,
+                            waiting time, response time, fairness, and real-time requirements of the system.
+                            Scheduling algorithms are an important area of study in operating systems and computer
+                            systems, and researchers continue to develop new and improved algorithms to optimize the
+                            scheduling of processes and threads in modern computing environments.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="card-container">
-        <div class="card">
-            <img src="public/1_sjf.jpg" class="img" alt="SJF">
-            <h3 class="card-title">Shortest Job First</h3>
-            <p class="card-description">A Scheduling algorithm where the process with the smallest burst time is given
-                the highest priority, resulting in the shortest overall execution time.</p>
-            <div class="card-buttons">
-                <a href="sjf.html" class="card-button">More Info</a>
-                <a href="https://os-project-sjf.vercel.app/" class="card-button" target="_blank">Simulate</a>
+    <div id="particles-js">
+        <div class="card-container">
+            <div class="card">
+                <img src="public/1_sjf.jpg" class="img" alt="SJF">
+                <h3 class="card-title" id="scroll">Shortest Job First</h3>
+                <p class="card-description">A Scheduling algorithm where the process with the smallest burst time
+                    is
+                    given
+                    the highest priority, resulting in the shortest overall execution time.It offers minimum average
+                    waiting
+                    time among all the other algorithms.
+                </p>
+                <div class="card-buttons">
+                    <a href="sjf.html" class="card-button">More Info</a>
+                    <a href="https://os-project-sjf.vercel.app/" class="card-button" target="_blank">Simulate</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="public/2_phil.jpeg" class="img" alt="Dining Philosopher">
-            <h3 class="card-title">Dining Philosopher</h3>
-            <p class="card-description">The Dining Philosophers problem is a classic computer science synchronization
-                problem where multiple philosophers share a limited number of forks to eat, leading to potential
-                deadlocks and starvation.</p>
-            <div class="card-buttons">
-                <a href="phil.html" class="card-button">More Info</a>
-                <a href="https://os-dinning-philosopher.vercel.app/" class="card-button" target="_blank">Simulate</a>
+            <div class="card">
+                <img src="public/2_phil.jpeg" class="img" alt="Dining Philosopher">
+                <h3 class="card-title">Dining Philosopher</h3>
+                <p class="card-description">The Dining Philosophers problem is a classic computer science
+                    synchronization
+                    problem where multiple philosophers share a limited number of forks to eat, leading to potential
+                    deadlocks and starvation.</p>
+                <div class="card-buttons">
+                    <a href="phil.html" class="card-button">More Info</a>
+                    <a href="https://os-dinning-philosopher.vercel.app/" class="card-button"
+                        target="_blank">Simulate</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="public/3_clook.jpg" class="img" alt="C/C-Look Algorithm">
-            <h3 class="card-title">C/C-Look Algorithm</h3>
-            <p class="card-description">C-Look is a disk scheduling algorithm that organizes I/O requests in a circular
-                order and services them in one direction, resulting in reduced head movement and improved efficiency
-                compared to traditional Look algorithm.</p>
-            <div class="card-buttons">
-                <a href="clook.html" class="card-button">More Info</a>
-                <a href="https://os-disk-algo.vercel.app/" class="card-button" target="_blank">Simulate</a>
+            <div class="card">
+                <img src="public/3_clook.jpg" class="img" alt="C/C-Look Algorithm">
+                <h3 class="card-title">C/C-Look Algorithm</h3>
+                <p class="card-description">C-Look is a disk scheduling algorithm that organizes I/O requests in a
+                    circular
+                    order and services them in one direction, resulting in reduced head movement and improved efficiency
+                    compared to traditional Look algorithm.</p>
+                <div class="card-buttons">
+                    <a href="clook.html" class="card-button">More Info</a>
+                    <a href="https://os-disk-algo.vercel.app/" class="card-button" target="_blank">Simulate</a>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img src="public/4_disk.jpg" class="img" alt="FIFO Disk Scheduling">
-            <h3 class="card-title">FIFO Page Replacement</h3>
-            <p class="card-description">It is a simple disk scheduling algorithm where I/O requests are serviced in the
-                order they arrive, resembling a queue. It has a straightforward implementation but may suffer from poor
-                performance due to lack of optimization for disk access patterns.</p>
-            <div class="card-buttons">
-                <a href="fifo.html" class="card-button">More Info</a>
-                <a href="https://os-project-fifo-page-replace.vercel.app/" class="card-button"
-                    target="_blank">Simulate</a>
+            <div class="card">
+                <img src="public/4_disk.jpg" class="img" alt="FIFO Disk Scheduling">
+                <h3 class="card-title">FIFO Page Replacement</h3>
+                <p class="card-description">It is a simple disk scheduling algorithm where I/O requests are serviced in
+                    the
+                    order they arrive, resembling a queue. It may suffer from poor
+                    performance due to lack of optimization for disk access patterns.</p>
+                <div class="card-buttons">
+                    <a href="fifo.html" class="card-button">More Info</a>
+                    <a href="https://os-project-fifo-page-replace.vercel.app/" class="card-button"
+                        target="_blank">Simulate</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.querySelector(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
 </body>
 
 </html>
