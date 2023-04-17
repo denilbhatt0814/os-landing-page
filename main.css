@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&family=Ubuntu&display=swap");
+
+/* Container Styles */
+.container {
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  padding-bottom: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: rgb(129, 10, 241);
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 10px;
+  margin-right: 25px;
+  font-family: "Roboto";
+}
+
+.nav-link {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: rgb(129, 10, 241);
+  font-weight: bolder;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 55px;
+  text-align: center;
+  
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  font-size: 28px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+/* Main Content Styles */
+.main-content {
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  color: #e3d4d4;
+  margin-bottom: 20px;
+}
+
+.text-container {
+  height: 80vh;
+  border-color: white;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  max-width: 90vw;
+  height: 350px;
+  padding: 10px;
+}
+
+.dummy-text {
+  color: white;
+  flex: 1;
+  padding: 0 20px;
+}
+
+.img {
+  border: 1px solid white;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-container {
+  max-width: 70vw;
+  gap: 20px;
+  display: flex;
+  margin-left: 10vw;
+  color: white;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px 60px 30px 60px;
+  border: 3px solid white;
+}
+
+.card {
+  flex-basis: calc(50% - 10px);
+  backdrop-filter: blur(30px);
+  padding: 20px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.card:hover {
+  background-color: rgb(73, 176, 244);
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.5s ease-in-out;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transform: translate(5px, -5px);
+}
+
+.card:hover p {
+  color: black;
+}
+.card:hover h3 {
+  color: black;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 14px;
+}
+
+.card-description {
+  font-size: 15px;
+  color: #09dff3;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+}
+
+.card-button {
+  padding: 10px 15px;
+  color: #070707;
+  background-color: #69e3f1;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.3s ease-in-out;
+  border-radius: 12px;
+}
+
+.card-button:hover {
+  background-color: #0f60d9;
+  transition: background-color 0.3s ease;
+  transform: translateY(-3px);
+  border-radius: 16px;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  height: 50px;
+  background-color: rgb(138, 43, 226);
+  backdrop-filter: blur(1px);
+  color: rgb(0, 0, 0);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+.flex-all-center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+}

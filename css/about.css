@@ -7,6 +7,12 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.heading {
+  margin: 0px;
+  color: white;
+  font-size: 40px;
+}
+
 body {
   background: linear-gradient(
     99.6deg,
